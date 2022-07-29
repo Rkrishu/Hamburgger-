@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'pt sans',sans-serif;
+    background-color: #02b875;
+}
+#menu{
+    width: 35px;
+    height: 30px;
+    margin: 30px 0px 20px 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: #b81568;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1{
+    transform: translateY(-4px);
+}
+
+#bar3{
+    transform: translateY(4px);
+}
+
+.nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav li a:hover{
+    font-weight: bold;
+}
+
+.nav li{
+    list-style: none;
+    padding: 16px 0;
+
+}
+
+.nav {
+    padding: 0;
+    margin: 0 20px;
+    transition: 1s ease;
+    display: none;
+
+}
+
+.icon .bar{
+    background-color: #fff;
+}
+
+.icon #bar1{
+    transform: translateY(4px) rotate(-45deg);
+}
+.icon #bar3{
+    transform: translateY(-6px) rotate(45deg);
+}
+.icon #bar2{
+    opacity: 0;
+}
+
+.change{
+    background-color: #f55c47;
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    z-index: -100;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 1000px ) {
+    .change{
+        width: 40%;
+    }
+}
+
+
+@media only screen and (max-width: 500px ) {
+    .change{
+        width: 100%;
+    }
+}
